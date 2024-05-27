@@ -4,6 +4,7 @@ import avatar2 from '../assets/images/pic-person-02.jpg'
 import avatar3 from '../assets/images/pic-person-03.jpg'
 
 import { FaClipboardList, FaUserShield, FaSearch, FaChartLine, FaMobileAlt, FaDatabase } from 'react-icons/fa';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 
 export const features = [
     {
@@ -65,4 +66,23 @@ export const contributors = [
     },
 ];
 
-
+export const footerLinks = [
+    {
+        name: 'GitHub',
+        icon: FaGithub,
+        href: 'https://github.com/your-profile',
+    },
+    {
+        name: 'Twitter',
+        icon: FaTwitter,
+        href: 'https://twitter.com/your-profile',
+    },
+    {
+        name: 'Privacy Policy',
+        href: '/privacy',
+    },
+    {
+        name: 'Terms of Service',
+        href: '/terms',
+    },
+];
