@@ -31,7 +31,7 @@ const Header = () => {
                 </div>
                 <Navbar.Collapse>
                     <Navbar.Link active={path === '/'} as={'div'}>
-                        <Link to='/about'>
+                        <Link to='/'>
                             Home
                         </Link>
                     </Navbar.Link>
@@ -48,7 +48,7 @@ const Header = () => {
                     </Navbar.Link>
                     <Navbar.Link active={path === '/sign-up'} as={'div'}>
                         <Link to='/sign-up'>
-                            Login
+                            Sign Up
                         </Link>
                     </Navbar.Link>
                 </Navbar.Collapse>
