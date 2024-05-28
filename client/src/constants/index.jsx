@@ -40,27 +40,27 @@ export const features = [
 
 export const contributors = [
     {
-        name: "Alice Johnson",
+        name: "Risikat {opoola",
         role: "Frontend Developer",
-        description: "Alice is a skilled frontend developer, experience in React and Vue.js.",
+        description: "Risikat is a skilled frontend developer, experience in React and Vue.js.",
         imageUrl: avatar1
     },
     {
-        name: "Bob Smith",
+        name: "Ikechukwu Dike",
         role: "Frontend Developer",
-        description: "Bob specializes in UI/UX design and has a passion for creating intuitive user interfaces.",
+        description: " Dike specializes in UI/UX design and has a passion for creating intuitive user interfaces.",
         imageUrl: avatar2
     },
     {
-        name: "Carol White",
+        name: "İbrahim Olubisi",
         role: "Frontend Developer",
-        description: "Carol has a strong background in JavaScript and loves to work on performance optimization.",
+        description: "Ibrahim has a strong background in JavaScript and loves to work on performance optimization.",
         imageUrl: avatar3
     },
     {
-        name: "Dave Brown",
+        name: "Mohamed Gaber",
         role: "Backend Developer",
-        description: "Dave is an expert in backend technologies, including Node.js and databases.",
+        description: "Mohamed is an expert in backend technologies, including Node.js and databases.",
         imageUrl: avatar2
     },
 ];
