@@ -5,7 +5,7 @@ import { Footer } from 'flowbite-react';
 
 const FooterCom = () => {
     return (
-        <Footer container={true} className="bg-gray-800 text-white py-6 flex flex-col">
+        <Footer container={true} className="bg-gray-800 text-white py-6 flex flex-col" id='contacts'>
             <div className="w-full flex flex-col md:flex-row justify-between items-center">
                 <div className='flex-1'>
                     <Link to='/' className=" self-center whitespace-nowrap text-sm sm-text-2xl font-bold leading-10 tracking-wide">
