@@ -20,8 +20,8 @@ const getPatientById = async (req, res) => {
 };
 
 const createPatient = async (req, res) => {
-    const { firstName, lastName, dob, medicalHistory, contactDetails } = req.body;
-    const newPatient = new Patient({ firstName, lastName, dob, medicalHistory, contactDetails });
+    const { email, username, password, firstName, lastName, dob, gender, address, phone, insuranceInfo } = req.body;
+    const newPatient = new Patient({ email, username, password, firstName, lastName, dob, gender, address, phone, insuranceInfo });
     try {
         const savedPatient = await newPatient.save();
         res.status(201).json(savedPatient);

@@ -4,6 +4,7 @@ import avatar2 from '../assets/images/pic-person-02.jpg'
 import avatar3 from '../assets/images/pic-person-03.jpg'
 
 import { FaClipboardList, FaUserShield, FaSearch, FaChartLine, FaMobileAlt, FaDatabase } from 'react-icons/fa';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 
 export const features = [
     {
@@ -40,29 +41,48 @@ export const features = [
 
 export const contributors = [
     {
-        name: "Alice Johnson",
+        name: "Risikat {opoola",
         role: "Frontend Developer",
-        description: "Alice is a skilled frontend developer, experience in React and Vue.js.",
+        description: "Risikat is a skilled frontend developer, experience in React and Vue.js.",
         imageUrl: avatar1
     },
     {
-        name: "Bob Smith",
+        name: "Ikechukwu Dike",
         role: "Frontend Developer",
-        description: "Bob specializes in UI/UX design and has a passion for creating intuitive user interfaces.",
+        description: " Dike specializes in UI/UX design and has a passion for creating intuitive user interfaces.",
         imageUrl: avatar2
     },
     {
-        name: "Carol White",
+        name: "İbrahim Olubisi",
         role: "Frontend Developer",
-        description: "Carol has a strong background in JavaScript and loves to work on performance optimization.",
+        description: "Ibrahim has a strong background in JavaScript and loves to work on performance optimization.",
         imageUrl: avatar3
     },
     {
-        name: "Dave Brown",
+        name: "Mohamed Gaber",
         role: "Backend Developer",
-        description: "Dave is an expert in backend technologies, including Node.js and databases.",
+        description: "Mohamed is an expert in backend technologies, including Node.js and databases.",
         imageUrl: avatar2
     },
 ];
 
-
+export const footerLinks = [
+    {
+        name: 'GitHub',
+        icon: FaGithub,
+        href: 'https://github.com/your-profile',
+    },
+    {
+        name: 'Twitter',
+        icon: FaTwitter,
+        href: 'https://twitter.com/your-profile',
+    },
+    {
+        name: 'Privacy Policy',
+        href: '/privacy',
+    },
+    {
+        name: 'Terms of Service',
+        href: '/terms',
+    },
+];
