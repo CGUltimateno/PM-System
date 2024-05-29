@@ -25,4 +25,12 @@ router.use('/inventories', inventoryAPI);
 const billingAPI = require('./billing.api');
 router.use('/billings', billingAPI);
 
+// Admin API
+const adminAPI = require('./admin.api');
+router.use('/admins', adminAPI);
+
+// Login API
+const AuthController = require('../controllers/auth.controller');
+router.post('/login', AuthController.login);
+
 module.exports = router;
