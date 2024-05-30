@@ -1,31 +1,47 @@
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import { Link } from "react-router-dom";
+import { DB_CONFIG } from "../constants/index.jsx";
 
 const SignIn = () => {
+    const handleSignIn = async (event) => {
+        event.preventDefault();
+        const username = event.target.username.value;
+        const password = event.target.password.value;
+
+        const response = await fetch(`${DB_CONFIG.API_URL}/login`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                username: username,
+                password: password,
+            }),
+        });
+
+        if (!response.ok) {
+            // handle error
+            console.log('Sign in failed');
+        } else {
+            // handle success
+            console.log('Sign in successful');
+        }
+    };
+
     return (
         <section className="h-dvh flex justify-center items-center">
-            <form className="flex max-w-md flex-col gap-4 w-full px-8 mx-auto">
+            <form className="flex max-w-md flex-col gap-4 w-full px-8 mx-auto" onSubmit={handleSignIn}>
                 <div>
                     <div className="mb-2 block">
-                        <Label htmlFor="email1" value="Your email" />
+                        <Label htmlFor="username" value="Username" />
                     </div>
-                    <TextInput
-                        id="email1"
-                        type="email"
-                        placeholder="name@company.com"
-                        required
-                    />
+                    <TextInput id="username" type="username" placeholder="" required/>
                 </div>
                 <div>
                     <div className="mb-2 block">
-                        <Label htmlFor="password" value="Your password" />
+                        <Label htmlFor="password" value="Password" />
                     </div>
-                    <TextInput
-                        id="password"
-                        type="password"
-                        required
-                        placeholder="*********"
-                    />
+                    <TextInput id="password" type="password" required placeholder=""/>
                 </div>
                 <div className="flex items-center gap-2">
                     <Checkbox id="remember" />
