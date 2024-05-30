@@ -1,0 +1,121 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #374151; /* Tailwind gray-900 */
+}
+
+h3 {
+  font-size: 1rem; /* text-base */
+  font-weight: 600; /* font-semibold */
+  line-height: 1.75rem; /* leading-7 */
+  color: #1f2937; /* text-gray-900 */
+}
+
+p {
+  margin-top: 0.25rem; /* mt-1 */
+  max-width: 32rem; /* max-w-2xl */
+  font-size: 0.875rem; /* text-sm */
+  line-height: 1.5rem; /* leading-6 */
+  color: #6b7280; /* text-gray-500 */
+}
+
+/* Layout */
+.container {
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+.border-top {
+  margin-top: 1.5rem; /* mt-6 */
+  border-top: 1px solid #f3f4f6; /* border-t border-gray-100 */
+}
+
+.definition-list {
+  border-bottom: 1px solid #f3f4f6; /* border-b border-gray-100 */
+}
+
+.definition-term {
+  padding-top: 1.5rem; /* py-6 */
+  padding-bottom: 1.5rem; /* py-6 */
+  display: grid;
+  grid-template-columns: 1fr; /* sm:grid-cols-3 */
+  gap: 1rem; /* sm:gap-4 */
+}
+
+.term-title {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  line-height: 1.5rem; /* leading-6 */
+  color: #1f2937; /* text-gray-900 */
+}
+
+.term-description {
+  margin-top: 0.25rem; /* mt-1 */
+  font-size: 0.875rem; /* text-sm */
+  line-height: 1.5rem; /* leading-6 */
+  color: #374151; /* text-gray-700 */
+}
+
+.attachment-list {
+  margin-top: 0.5rem; /* mt-2 */
+  font-size: 0.875rem; /* text-sm */
+  color: #1f2937; /* text-gray-900 */
+}
+
+.attachment-list ul {
+  list-style-type: none;
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  border-radius: 0.375rem; /* rounded-md */
+}
+
+.attachment-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem; /* py-4 pl-4 pr-5 */
+  border-bottom: 1px solid #f3f4f6; /* divide-y divide-gray-100 */
+}
+
+.attachment-list .icon {
+  width: 1.25rem; /* h-5 w-5 */
+  height: 1.25rem; /* h-5 w-5 */
+  flex-shrink: 0;
+  color: #9ca3af; /* text-gray-400 */
+}
+
+.attachment-list .details {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  gap: 0.5rem;
+  margin-left: 1rem; /* ml-4 */
+}
+
+.attachment-list .filename {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500; /* font-medium */
+}
+
+.attachment-list .filesize {
+  flex-shrink: 0;
+  color: #9ca3af; /* text-gray-400 */
+}
+
+.attachment-list .download-link {
+  margin-left: 1rem; /* ml-4 */
+  flex-shrink: 0;
+  font-weight: 500; /* font-medium */
+  color: #4f46e5; /* text-indigo-600 */
+}
+
+.attachment-list .download-link:hover {
+  color: #4338ca; /* text-indigo-500 */
+}
