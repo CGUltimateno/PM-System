@@ -86,3 +86,8 @@ export const footerLinks = [
         href: '/terms',
     },
 ];
+
+export const DB_CONFIG = {
+    API_URL: 'http://localhost:5000',
+    API_VERSION: 'v1',
+};
