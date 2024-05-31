@@ -5,6 +5,7 @@ import DashProfile from "../components/DashProfile"
 import DashInventory from "../components/DashInventory"
 import DashBilling from "../components/DashBilling"
 import DashAppoint from "../components/DashAppoint";
+import AddInventory from "../components/AddInventory";
 
 const Dashboard = () => {
     const location = useLocation();
@@ -29,6 +30,7 @@ const Dashboard = () => {
             {tab === 'inventory' && <DashInventory />}
             {tab === 'billing' && <DashBilling />}
             {tab === 'appointment' && <DashAppoint />}
+            {tab === 'add-inventory' && <AddInventory />}
         </div>
     )
 }

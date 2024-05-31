@@ -23,7 +23,7 @@ const DashSideBar = () => {
             <Sidebar.Items>
                 <Sidebar.ItemGroup className='gap-3'>
                     <Link to='/dashboard?tab=profile'>
-                        <Sidebar.Item active={tab === 'profile'} icon={HiUser} label={'patient'} labelColor='dark' as='div'>
+                        <Sidebar.Item active={tab === 'profile'} icon={HiUser} label={'Admin'} labelColor='dark' as='div'>
                             Profile
                         </Sidebar.Item>
                     </Link>

@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const DashProfile = () => {
     return (
-        <section className="flex justify-center">
+        <section className="flex flex-col justify-center items-center mx-auto w-full">
+            <div>
+                <h3 className="text-xl leading-3 font-bold">Profile</h3>
+            </div>
             <form className="flex max-w-md flex-col gap-4 w-full px-8 mx-auto">
                 <div>
                     <div className="mb-2 block">
